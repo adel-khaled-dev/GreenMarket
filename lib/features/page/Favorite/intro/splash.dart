@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:greenmarket/core/colors/colors.dart';
 import 'package:greenmarket/core/widgets/navigator.dart';
-import 'package:greenmarket/features/intro/welcome.dart';
+import 'package:greenmarket/features/page/Favorite/intro/welcome.dart';
 
 class Splash extends StatefulWidget {
   const Splash({super.key});

@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
 import 'package:greenmarket/core/colors/colors.dart';
 
 import 'package:greenmarket/core/widgets/icons.dart';
+import 'package:greenmarket/features/page/Favorite/auth/Login/login.dart';
+
 
 class Welcome extends StatelessWidget {
   const Welcome({super.key});
@@ -26,7 +29,13 @@ class Welcome extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 //Text and Icon
-                IconApp.carrot,
+                SvgPicture.asset(
+                  IconApp.carrot,
+                  colorFilter: ColorFilter.mode(
+                    ColorsApp.textcolor,
+                    BlendMode.srcIn,
+                  ),
+                ),
                 SizedBox(height: 35),
                 Text(
                   "Welcome\n to our store",
@@ -49,7 +58,12 @@ class Welcome extends StatelessWidget {
                 SizedBox(height: 35),
                 //Button
                 ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => Login()),
+                    );
+                  },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: ColorsApp.primary,
                     minimumSize: Size(319.75, 58.88),

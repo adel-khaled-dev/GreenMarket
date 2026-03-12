@@ -10,6 +10,7 @@ dependencies:
   flutter:
     sdk: flutter
   flutter_svg: ^2.2.3
+  pinput: ^6.0.2
 
 dev_dependencies:
   flutter_test:
@@ -22,4 +23,21 @@ flutter:
     - lib/core/assets/imags/welcome_svg.svg
     - lib/core/assets/imags/welcome.png
     - lib/core/assets/icons/carrot_svg.svg
+    - lib/core/assets/icons/cart.svg
+    - lib/core/assets/icons/Explore.svg
+    - lib/core/assets/icons/favourite.svg
+    - lib/core/assets/icons/store.svg
+    - lib/core/assets/icons/account.svg
+    - lib/core/assets/imags/bnananas.png
+    - lib/core/assets/imags/pngfuel 6.png
+    - lib/core/assets/imags/Vector.png
 
+
+  fonts:
+    - family: Roboto
+      fonts:
+        - asset: lib/core/assets/font/Roboto-Bold.ttf
+          weight: 700
+        - asset: lib/core/assets/font/Roboto-Medium.ttf
+        - asset: lib/core/assets/font/Roboto-Regular.ttf
+      
